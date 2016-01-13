@@ -16,43 +16,85 @@
 		1A930EBF1979874E006891E3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A930EBD1979874E006891E3 /* Main.storyboard */; };
 		1A930EC21979874E006891E3 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A930EC11979874E006891E3 /* ViewController.m */; };
 		1A930EC41979874E006891E3 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1A930EC31979874E006891E3 /* Images.xcassets */; };
-		1A930ECB1979874E006891E3 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A930ECA1979874E006891E3 /* XCTest.framework */; };
-		1A930ECC1979874E006891E3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A930EAB1979874E006891E3 /* Foundation.framework */; };
-		1A930ECD1979874E006891E3 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A930EAF1979874E006891E3 /* UIKit.framework */; };
-		1A930ED51979874E006891E3 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1A930ED31979874E006891E3 /* InfoPlist.strings */; };
-		1A930ED71979874E006891E3 /* Final_App_ProjectTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A930ED61979874E006891E3 /* Final_App_ProjectTests.m */; };
+		1A930EE219798A44006891E3 /* boardPiece.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A930EE119798A44006891E3 /* boardPiece.m */; };
+		1A930F06197B0270006891E3 /* gameBoardView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A930F05197B0270006891E3 /* gameBoardView.m */; };
+		1A930F09197DE30C006891E3 /* pieceButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A930F08197DE30C006891E3 /* pieceButton.m */; };
+		1ABE0F4019832C93008E37C2 /* GameOverVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1ABE0F3F19832C93008E37C2 /* GameOverVC.m */; };
+		1AC14D051988559500AB0997 /* blackPill.png in Resources */ = {isa = PBXBuildFile; fileRef = 1AC14CEF1988559500AB0997 /* blackPill.png */; };
+		1AC14D061988559500AB0997 /* blueCapsule.png in Resources */ = {isa = PBXBuildFile; fileRef = 1AC14CF01988559500AB0997 /* blueCapsule.png */; };
+		1AC14D071988559500AB0997 /* bluePill.png in Resources */ = {isa = PBXBuildFile; fileRef = 1AC14CF11988559500AB0997 /* bluePill.png */; };
+		1AC14D081988559500AB0997 /* blueTablet.png in Resources */ = {isa = PBXBuildFile; fileRef = 1AC14CF21988559500AB0997 /* blueTablet.png */; };
+		1AC14D091988559500AB0997 /* greenCapsule.png in Resources */ = {isa = PBXBuildFile; fileRef = 1AC14CF31988559500AB0997 /* greenCapsule.png */; };
+		1AC14D0A1988559500AB0997 /* greenPill.png in Resources */ = {isa = PBXBuildFile; fileRef = 1AC14CF41988559500AB0997 /* greenPill.png */; };
+		1AC14D0B1988559500AB0997 /* greenTablet.png in Resources */ = {isa = PBXBuildFile; fileRef = 1AC14CF51988559500AB0997 /* greenTablet.png */; };
+		1AC14D0C1988559500AB0997 /* orangeCapsule.png in Resources */ = {isa = PBXBuildFile; fileRef = 1AC14CF61988559500AB0997 /* orangeCapsule.png */; };
+		1AC14D0D1988559500AB0997 /* orangePill.png in Resources */ = {isa = PBXBuildFile; fileRef = 1AC14CF71988559500AB0997 /* orangePill.png */; };
+		1AC14D0E1988559500AB0997 /* orangeTablet.png in Resources */ = {isa = PBXBuildFile; fileRef = 1AC14CF81988559500AB0997 /* orangeTablet.png */; };
+		1AC14D0F1988559500AB0997 /* pinkCapsule.png in Resources */ = {isa = PBXBuildFile; fileRef = 1AC14CF91988559500AB0997 /* pinkCapsule.png */; };
+		1AC14D101988559500AB0997 /* pinkPill.png in Resources */ = {isa = PBXBuildFile; fileRef = 1AC14CFA1988559500AB0997 /* pinkPill.png */; };
+		1AC14D111988559500AB0997 /* pinkTablet.png in Resources */ = {isa = PBXBuildFile; fileRef = 1AC14CFB1988559500AB0997 /* pinkTablet.png */; };
+		1AC14D121988559500AB0997 /* purpleCapsule.png in Resources */ = {isa = PBXBuildFile; fileRef = 1AC14CFC1988559500AB0997 /* purpleCapsule.png */; };
+		1AC14D131988559500AB0997 /* purplePill.png in Resources */ = {isa = PBXBuildFile; fileRef = 1AC14CFD1988559500AB0997 /* purplePill.png */; };
+		1AC14D141988559500AB0997 /* purpleTablet.png in Resources */ = {isa = PBXBuildFile; fileRef = 1AC14CFE1988559500AB0997 /* purpleTablet.png */; };
+		1AC14D151988559500AB0997 /* redCapsule.png in Resources */ = {isa = PBXBuildFile; fileRef = 1AC14CFF1988559500AB0997 /* redCapsule.png */; };
+		1AC14D161988559500AB0997 /* redPill.png in Resources */ = {isa = PBXBuildFile; fileRef = 1AC14D001988559500AB0997 /* redPill.png */; };
+		1AC14D171988559500AB0997 /* redTablet.png in Resources */ = {isa = PBXBuildFile; fileRef = 1AC14D011988559500AB0997 /* redTablet.png */; };
+		1AC14D181988559500AB0997 /* yellowCapsule.png in Resources */ = {isa = PBXBuildFile; fileRef = 1AC14D021988559500AB0997 /* yellowCapsule.png */; };
+		1AC14D191988559500AB0997 /* yellowPill.png in Resources */ = {isa = PBXBuildFile; fileRef = 1AC14D031988559500AB0997 /* yellowPill.png */; };
+		1AC14D1A1988559500AB0997 /* yellowTablet.png in Resources */ = {isa = PBXBuildFile; fileRef = 1AC14D041988559500AB0997 /* yellowTablet.png */; };
+		1AC14D1C198964EF00AB0997 /* coinSoundEffect.wav in Resources */ = {isa = PBXBuildFile; fileRef = 1AC14D1B198964EF00AB0997 /* coinSoundEffect.wav */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		1A930ECE1979874E006891E3 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 1A930EA01979874E006891E3 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 1A930EA71979874E006891E3;
-			remoteInfo = "Final App Project";
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXFileReference section */
-		1A930EA81979874E006891E3 /* Final App Project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Final App Project.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1A930EA81979874E006891E3 /* Colorblind Pharmacist.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Colorblind Pharmacist.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1A930EAB1979874E006891E3 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		1A930EAD1979874E006891E3 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		1A930EAF1979874E006891E3 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
-		1A930EB31979874E006891E3 /* Final App Project-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Final App Project-Info.plist"; sourceTree = "<group>"; };
+		1A930EB31979874E006891E3 /* Colorblind Pharmacist-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Colorblind Pharmacist-Info.plist"; sourceTree = "<group>"; };
 		1A930EB51979874E006891E3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		1A930EB71979874E006891E3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		1A930EB91979874E006891E3 /* Final App Project-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Final App Project-Prefix.pch"; sourceTree = "<group>"; };
+		1A930EB91979874E006891E3 /* Colorblind Pharmacist-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Colorblind Pharmacist-Prefix.pch"; sourceTree = "<group>"; };
 		1A930EBA1979874E006891E3 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		1A930EBB1979874E006891E3 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		1A930EBE1979874E006891E3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1A930EC01979874E006891E3 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		1A930EC11979874E006891E3 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		1A930EC31979874E006891E3 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		1A930EC91979874E006891E3 /* Final App ProjectTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Final App ProjectTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1A930ECA1979874E006891E3 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		1A930ED21979874E006891E3 /* Final App ProjectTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Final App ProjectTests-Info.plist"; sourceTree = "<group>"; };
+		1A930ED21979874E006891E3 /* Colorblind PharmacistTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Colorblind PharmacistTests-Info.plist"; sourceTree = "<group>"; };
 		1A930ED41979874E006891E3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		1A930ED61979874E006891E3 /* Final_App_ProjectTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Final_App_ProjectTests.m; sourceTree = "<group>"; };
+		1A930EE019798A44006891E3 /* boardPiece.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = boardPiece.h; sourceTree = "<group>"; };
+		1A930EE119798A44006891E3 /* boardPiece.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = boardPiece.m; sourceTree = "<group>"; };
+		1A930F04197B0270006891E3 /* gameBoardView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = gameBoardView.h; sourceTree = "<group>"; };
+		1A930F05197B0270006891E3 /* gameBoardView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = gameBoardView.m; sourceTree = "<group>"; };
+		1A930F07197DE30C006891E3 /* pieceButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pieceButton.h; sourceTree = "<group>"; };
+		1A930F08197DE30C006891E3 /* pieceButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = pieceButton.m; sourceTree = "<group>"; };
+		1ABE0F3E19832C93008E37C2 /* GameOverVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameOverVC.h; sourceTree = "<group>"; };
+		1ABE0F3F19832C93008E37C2 /* GameOverVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameOverVC.m; sourceTree = "<group>"; };
+		1AC14CEF1988559500AB0997 /* blackPill.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = blackPill.png; sourceTree = "<group>"; };
+		1AC14CF01988559500AB0997 /* blueCapsule.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = blueCapsule.png; sourceTree = "<group>"; };
+		1AC14CF11988559500AB0997 /* bluePill.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bluePill.png; sourceTree = "<group>"; };
+		1AC14CF21988559500AB0997 /* blueTablet.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = blueTablet.png; sourceTree = "<group>"; };
+		1AC14CF31988559500AB0997 /* greenCapsule.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = greenCapsule.png; sourceTree = "<group>"; };
+		1AC14CF41988559500AB0997 /* greenPill.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = greenPill.png; sourceTree = "<group>"; };
+		1AC14CF51988559500AB0997 /* greenTablet.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = greenTablet.png; sourceTree = "<group>"; };
+		1AC14CF61988559500AB0997 /* orangeCapsule.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = orangeCapsule.png; sourceTree = "<group>"; };
+		1AC14CF71988559500AB0997 /* orangePill.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = orangePill.png; sourceTree = "<group>"; };
+		1AC14CF81988559500AB0997 /* orangeTablet.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = orangeTablet.png; sourceTree = "<group>"; };
+		1AC14CF91988559500AB0997 /* pinkCapsule.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pinkCapsule.png; sourceTree = "<group>"; };
+		1AC14CFA1988559500AB0997 /* pinkPill.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pinkPill.png; sourceTree = "<group>"; };
+		1AC14CFB1988559500AB0997 /* pinkTablet.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pinkTablet.png; sourceTree = "<group>"; };
+		1AC14CFC1988559500AB0997 /* purpleCapsule.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = purpleCapsule.png; sourceTree = "<group>"; };
+		1AC14CFD1988559500AB0997 /* purplePill.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = purplePill.png; sourceTree = "<group>"; };
+		1AC14CFE1988559500AB0997 /* purpleTablet.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = purpleTablet.png; sourceTree = "<group>"; };
+		1AC14CFF1988559500AB0997 /* redCapsule.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = redCapsule.png; sourceTree = "<group>"; };
+		1AC14D001988559500AB0997 /* redPill.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = redPill.png; sourceTree = "<group>"; };
+		1AC14D011988559500AB0997 /* redTablet.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = redTablet.png; sourceTree = "<group>"; };
+		1AC14D021988559500AB0997 /* yellowCapsule.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = yellowCapsule.png; sourceTree = "<group>"; };
+		1AC14D031988559500AB0997 /* yellowPill.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = yellowPill.png; sourceTree = "<group>"; };
+		1AC14D041988559500AB0997 /* yellowTablet.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = yellowTablet.png; sourceTree = "<group>"; };
+		1AC14D1B198964EF00AB0997 /* coinSoundEffect.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = coinSoundEffect.wav; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,16 +105,6 @@
 				1A930EAE1979874E006891E3 /* CoreGraphics.framework in Frameworks */,
 				1A930EB01979874E006891E3 /* UIKit.framework in Frameworks */,
 				1A930EAC1979874E006891E3 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		1A930EC61979874E006891E3 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				1A930ECB1979874E006891E3 /* XCTest.framework in Frameworks */,
-				1A930ECD1979874E006891E3 /* UIKit.framework in Frameworks */,
-				1A930ECC1979874E006891E3 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -92,8 +124,7 @@
 		1A930EA91979874E006891E3 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				1A930EA81979874E006891E3 /* Final App Project.app */,
-				1A930EC91979874E006891E3 /* Final App ProjectTests.xctest */,
+				1A930EA81979874E006891E3 /* Colorblind Pharmacist.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -117,6 +148,16 @@
 				1A930EBD1979874E006891E3 /* Main.storyboard */,
 				1A930EC01979874E006891E3 /* ViewController.h */,
 				1A930EC11979874E006891E3 /* ViewController.m */,
+				1ABE0F3E19832C93008E37C2 /* GameOverVC.h */,
+				1ABE0F3F19832C93008E37C2 /* GameOverVC.m */,
+				1A930EE019798A44006891E3 /* boardPiece.h */,
+				1A930EE119798A44006891E3 /* boardPiece.m */,
+				1A930F04197B0270006891E3 /* gameBoardView.h */,
+				1A930F05197B0270006891E3 /* gameBoardView.m */,
+				1A930F07197DE30C006891E3 /* pieceButton.h */,
+				1A930F08197DE30C006891E3 /* pieceButton.m */,
+				1AC14D1B198964EF00AB0997 /* coinSoundEffect.wav */,
+				1AC14CEE1988559500AB0997 /* Final App Piece Images */,
 				1A930EC31979874E006891E3 /* Images.xcassets */,
 				1A930EB21979874E006891E3 /* Supporting Files */,
 			);
@@ -126,10 +167,10 @@
 		1A930EB21979874E006891E3 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				1A930EB31979874E006891E3 /* Final App Project-Info.plist */,
+				1A930EB31979874E006891E3 /* Colorblind Pharmacist-Info.plist */,
 				1A930EB41979874E006891E3 /* InfoPlist.strings */,
 				1A930EB71979874E006891E3 /* main.m */,
-				1A930EB91979874E006891E3 /* Final App Project-Prefix.pch */,
+				1A930EB91979874E006891E3 /* Colorblind Pharmacist-Prefix.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -146,18 +187,47 @@
 		1A930ED11979874E006891E3 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				1A930ED21979874E006891E3 /* Final App ProjectTests-Info.plist */,
+				1A930ED21979874E006891E3 /* Colorblind PharmacistTests-Info.plist */,
 				1A930ED31979874E006891E3 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		1AC14CEE1988559500AB0997 /* Final App Piece Images */ = {
+			isa = PBXGroup;
+			children = (
+				1AC14CEF1988559500AB0997 /* blackPill.png */,
+				1AC14CF01988559500AB0997 /* blueCapsule.png */,
+				1AC14CF11988559500AB0997 /* bluePill.png */,
+				1AC14CF21988559500AB0997 /* blueTablet.png */,
+				1AC14CF31988559500AB0997 /* greenCapsule.png */,
+				1AC14CF41988559500AB0997 /* greenPill.png */,
+				1AC14CF51988559500AB0997 /* greenTablet.png */,
+				1AC14CF61988559500AB0997 /* orangeCapsule.png */,
+				1AC14CF71988559500AB0997 /* orangePill.png */,
+				1AC14CF81988559500AB0997 /* orangeTablet.png */,
+				1AC14CF91988559500AB0997 /* pinkCapsule.png */,
+				1AC14CFA1988559500AB0997 /* pinkPill.png */,
+				1AC14CFB1988559500AB0997 /* pinkTablet.png */,
+				1AC14CFC1988559500AB0997 /* purpleCapsule.png */,
+				1AC14CFD1988559500AB0997 /* purplePill.png */,
+				1AC14CFE1988559500AB0997 /* purpleTablet.png */,
+				1AC14CFF1988559500AB0997 /* redCapsule.png */,
+				1AC14D001988559500AB0997 /* redPill.png */,
+				1AC14D011988559500AB0997 /* redTablet.png */,
+				1AC14D021988559500AB0997 /* yellowCapsule.png */,
+				1AC14D031988559500AB0997 /* yellowPill.png */,
+				1AC14D041988559500AB0997 /* yellowTablet.png */,
+			);
+			path = "Final App Piece Images";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		1A930EA71979874E006891E3 /* Final App Project */ = {
+		1A930EA71979874E006891E3 /* Colorblind Pharmacist */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 1A930EDA1979874F006891E3 /* Build configuration list for PBXNativeTarget "Final App Project" */;
+			buildConfigurationList = 1A930EDA1979874F006891E3 /* Build configuration list for PBXNativeTarget "Colorblind Pharmacist" */;
 			buildPhases = (
 				1A930EA41979874E006891E3 /* Sources */,
 				1A930EA51979874E006891E3 /* Frameworks */,
@@ -167,28 +237,10 @@
 			);
 			dependencies = (
 			);
-			name = "Final App Project";
+			name = "Colorblind Pharmacist";
 			productName = "Final App Project";
-			productReference = 1A930EA81979874E006891E3 /* Final App Project.app */;
+			productReference = 1A930EA81979874E006891E3 /* Colorblind Pharmacist.app */;
 			productType = "com.apple.product-type.application";
-		};
-		1A930EC81979874E006891E3 /* Final App ProjectTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 1A930EDD1979874F006891E3 /* Build configuration list for PBXNativeTarget "Final App ProjectTests" */;
-			buildPhases = (
-				1A930EC51979874E006891E3 /* Sources */,
-				1A930EC61979874E006891E3 /* Frameworks */,
-				1A930EC71979874E006891E3 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				1A930ECF1979874E006891E3 /* PBXTargetDependency */,
-			);
-			name = "Final App ProjectTests";
-			productName = "Final App ProjectTests";
-			productReference = 1A930EC91979874E006891E3 /* Final App ProjectTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
@@ -196,15 +248,10 @@
 		1A930EA01979874E006891E3 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0510;
+				LastUpgradeCheck = 0710;
 				ORGANIZATIONNAME = "James Chen & Oscar GM";
-				TargetAttributes = {
-					1A930EC81979874E006891E3 = {
-						TestTargetID = 1A930EA71979874E006891E3;
-					};
-				};
 			};
-			buildConfigurationList = 1A930EA31979874E006891E3 /* Build configuration list for PBXProject "Final App Project" */;
+			buildConfigurationList = 1A930EA31979874E006891E3 /* Build configuration list for PBXProject "Colorblind Pharmacist" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -217,8 +264,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				1A930EA71979874E006891E3 /* Final App Project */,
-				1A930EC81979874E006891E3 /* Final App ProjectTests */,
+				1A930EA71979874E006891E3 /* Colorblind Pharmacist */,
 			);
 		};
 /* End PBXProject section */
@@ -228,17 +274,32 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1AC14D071988559500AB0997 /* bluePill.png in Resources */,
+				1AC14D151988559500AB0997 /* redCapsule.png in Resources */,
+				1AC14D091988559500AB0997 /* greenCapsule.png in Resources */,
+				1AC14D131988559500AB0997 /* purplePill.png in Resources */,
+				1AC14D0E1988559500AB0997 /* orangeTablet.png in Resources */,
 				1A930EC41979874E006891E3 /* Images.xcassets in Resources */,
+				1AC14D0C1988559500AB0997 /* orangeCapsule.png in Resources */,
+				1AC14D181988559500AB0997 /* yellowCapsule.png in Resources */,
+				1AC14D061988559500AB0997 /* blueCapsule.png in Resources */,
+				1AC14D1A1988559500AB0997 /* yellowTablet.png in Resources */,
+				1AC14D0A1988559500AB0997 /* greenPill.png in Resources */,
+				1AC14D0D1988559500AB0997 /* orangePill.png in Resources */,
+				1AC14D141988559500AB0997 /* purpleTablet.png in Resources */,
+				1AC14D171988559500AB0997 /* redTablet.png in Resources */,
+				1AC14D0B1988559500AB0997 /* greenTablet.png in Resources */,
+				1AC14D191988559500AB0997 /* yellowPill.png in Resources */,
 				1A930EB61979874E006891E3 /* InfoPlist.strings in Resources */,
+				1AC14D161988559500AB0997 /* redPill.png in Resources */,
+				1AC14D081988559500AB0997 /* blueTablet.png in Resources */,
+				1AC14D051988559500AB0997 /* blackPill.png in Resources */,
+				1AC14D101988559500AB0997 /* pinkPill.png in Resources */,
+				1AC14D121988559500AB0997 /* purpleCapsule.png in Resources */,
 				1A930EBF1979874E006891E3 /* Main.storyboard in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		1A930EC71979874E006891E3 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				1A930ED51979874E006891E3 /* InfoPlist.strings in Resources */,
+				1AC14D0F1988559500AB0997 /* pinkCapsule.png in Resources */,
+				1AC14D1C198964EF00AB0997 /* coinSoundEffect.wav in Resources */,
+				1AC14D111988559500AB0997 /* pinkTablet.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -250,28 +311,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				1A930EC21979874E006891E3 /* ViewController.m in Sources */,
+				1A930EE219798A44006891E3 /* boardPiece.m in Sources */,
+				1A930F09197DE30C006891E3 /* pieceButton.m in Sources */,
 				1A930EBC1979874E006891E3 /* AppDelegate.m in Sources */,
 				1A930EB81979874E006891E3 /* main.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		1A930EC51979874E006891E3 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				1A930ED71979874E006891E3 /* Final_App_ProjectTests.m in Sources */,
+				1A930F06197B0270006891E3 /* gameBoardView.m in Sources */,
+				1ABE0F4019832C93008E37C2 /* GameOverVC.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		1A930ECF1979874E006891E3 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 1A930EA71979874E006891E3 /* Final App Project */;
-			targetProxy = 1A930ECE1979874E006891E3 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		1A930EB41979874E006891E3 /* InfoPlist.strings */ = {
@@ -319,6 +368,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -377,9 +427,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Final App Project/Final App Project-Prefix.pch";
-				INFOPLIST_FILE = "Final App Project/Final App Project-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				GCC_PREFIX_HEADER = "Final App Project/Colorblind Pharmacist-Prefix.pch";
+				INFOPLIST_FILE = "Final App Project/Colorblind Pharmacist-Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "CSE436.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "Colorblind Pharmacist";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -390,57 +441,18 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Final App Project/Final App Project-Prefix.pch";
-				INFOPLIST_FILE = "Final App Project/Final App Project-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				GCC_PREFIX_HEADER = "Final App Project/Colorblind Pharmacist-Prefix.pch";
+				INFOPLIST_FILE = "Final App Project/Colorblind Pharmacist-Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "CSE436.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "Colorblind Pharmacist";
 				WRAPPER_EXTENSION = app;
-			};
-			name = Release;
-		};
-		1A930EDE1979874F006891E3 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Final App Project.app/Final App Project";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Final App Project/Final App Project-Prefix.pch";
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = "Final App ProjectTests/Final App ProjectTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = xctest;
-			};
-			name = Debug;
-		};
-		1A930EDF1979874F006891E3 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Final App Project.app/Final App Project";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Final App Project/Final App Project-Prefix.pch";
-				INFOPLIST_FILE = "Final App ProjectTests/Final App ProjectTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = xctest;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		1A930EA31979874E006891E3 /* Build configuration list for PBXProject "Final App Project" */ = {
+		1A930EA31979874E006891E3 /* Build configuration list for PBXProject "Colorblind Pharmacist" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				1A930ED81979874F006891E3 /* Debug */,
@@ -449,21 +461,14 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		1A930EDA1979874F006891E3 /* Build configuration list for PBXNativeTarget "Final App Project" */ = {
+		1A930EDA1979874F006891E3 /* Build configuration list for PBXNativeTarget "Colorblind Pharmacist" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				1A930EDB1979874F006891E3 /* Debug */,
 				1A930EDC1979874F006891E3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-		};
-		1A930EDD1979874F006891E3 /* Build configuration list for PBXNativeTarget "Final App ProjectTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				1A930EDE1979874F006891E3 /* Debug */,
-				1A930EDF1979874F006891E3 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

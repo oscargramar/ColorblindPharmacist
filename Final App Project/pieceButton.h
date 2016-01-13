@@ -7,7 +7,17 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "boardPiece.h"
 
 @interface pieceButton : UIButton
+
+@property(nonatomic) int pieceColorProperty;
+@property(nonatomic) int pieceShapeProperty;
+@property(nonatomic) NSString* pieceImageName;
+@property(nonatomic,strong) UIImage* buttonImage;
+@property(nonatomic,strong) UIButton* pieceButton;
+
+
++(pieceButton *)createPieceButtonFromGamePiece: (boardPiece *) gamePiece atFrame: (CGRect *) frame;
 
 @end

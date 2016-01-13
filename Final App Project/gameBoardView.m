@@ -7,17 +7,25 @@
 //
 
 #import "gameBoardView.h"
+#import "ViewController.h"
+#import "pieceButton.h"
 
 @implementation gameBoardView
 
 - (id)initWithFrame:(CGRect)frame
 {
+    
     self = [super initWithFrame:frame];
     if (self) {
-        // Initialization code
+        
     }
     return self;
 }
+
+
+    
+
+
 
 /*
 // Only override drawRect: if you perform custom drawing.

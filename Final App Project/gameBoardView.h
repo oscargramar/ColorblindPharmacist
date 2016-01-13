@@ -7,7 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "boardPiece.h"
 
 @interface gameBoardView : UIImageView
+
 
 @end

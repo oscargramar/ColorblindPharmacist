@@ -10,4 +10,9 @@
 
 @interface GameOverVC : UIViewController
 
+@property (weak, nonatomic) IBOutlet UITextField *scoreTextField;
+@property (weak, nonatomic) IBOutlet UIButton *playAgainButton;
+
+@property(nonatomic) int score;
+
 @end

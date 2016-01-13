@@ -7,6 +7,7 @@
 //
 
 #import "GameOverVC.h"
+#import "ViewController.h"
 
 @interface GameOverVC ()
 
@@ -19,9 +20,17 @@
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
         // Custom initialization
+        
+        
     }
     return self;
 }
+
+- (IBAction)playAgainButtonMethod:(id)sender {
+    ViewController *restartGameVC = [self.storyboard instantiateViewControllerWithIdentifier:@"MainGameBoardVC"];
+    [self presentViewController:restartGameVC animated:YES completion:nil];
+}
+
 
 - (void)viewDidLoad
 {

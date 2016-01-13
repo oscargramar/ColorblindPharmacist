@@ -10,4 +10,16 @@
 
 @interface boardPiece : NSObject
 
+@property(nonatomic) int pieceColor;
+@property(nonatomic) int pieceShape;
+@property(nonatomic) NSString* pieceImage;
+
+
+
++(boardPiece *)generateRandomGamePiece;
+
+-(int)randomNumberGenerator: (int) upperBound;
+
 @end
+
+
